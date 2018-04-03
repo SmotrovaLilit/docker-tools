@@ -1,6 +1,5 @@
 #!/bin/bash
 
-##изменение настроек к бд
 if [ -z "$OWNER_PASSWORD" ]; then
     echo "Error: don't set ENV OWNER_PASSWORD." >&2
     exit 1
