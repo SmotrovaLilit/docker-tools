@@ -59,3 +59,8 @@ RUN mkdir -p /home/.ssh/ && \
  cp id_rsa /home/.ssh/id_rsa && \
  ssh -T -o StrictHostKeyChecking=no somehost.org
 ```
+
+## Copy with chown
+```
+COPY --chown=33:33 ./ /var/www/html
+```
